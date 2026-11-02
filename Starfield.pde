@@ -75,7 +75,7 @@ class Particle{
     rotate(angle);
     ellipse(0,0, (dist(x,y,250,250)/(75/(1+(speed/15)))/distance) , (dist(x,y,250,250)/(75*(1+(speed/50)))/distance) );
     popMatrix();
-    if (x > 505 || x < -5 || y > 505 || y < -5){
+    if (x > 525 || x < -25 || y > 525 || y < -25){
       deleteParticle(myIndex);
     }
   }
